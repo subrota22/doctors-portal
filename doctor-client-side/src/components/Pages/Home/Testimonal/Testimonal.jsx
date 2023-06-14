@@ -33,7 +33,7 @@ return (
 <div className="flex justify-between mx-3">
 <div className='mt-6'>       
 <p className='text-emerald-500 font-bold text-lg'>Testimonial</p>
-<h1 className='text-4xl font-bold text-gray-600'>What Our Patients Says</h1>
+<h1 className='text-4xl font-bold '>What Our Patients Says</h1>
 </div>
 <div>
 <img src={quote} alt="queties" className='h-20 md:h-40 '/>
@@ -42,7 +42,7 @@ return (
 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ml-3">
 {
 cards.map(card => 
-<div className="card w-96 my-3 shadow-xl text-primary-content textColor" key={card.id}>
+<div  data-aos="zoom-in" className="card w-96 my-3 shadow-xl text-primary-content textColor" key={card.id}>
 <div className="card-body">
 <h2 className="card-text">{card.description}</h2>
 <div className="flex my-4">

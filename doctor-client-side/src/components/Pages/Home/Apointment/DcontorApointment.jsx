@@ -7,12 +7,12 @@ const DcontorApointment = () => {
   backgroundSize : "cover" , 
  }
   return (
-<div className='mb-6 mt-16'>
+<div className='mb-6 mt-16'  data-aos="zoom-in">
  <div className="hero h-[555px]" style={doctorApointMentStyle}>
   <div className="hero-content flex-col lg:flex-row">
     <img src={doctor} alt='denties doctor' className="max-w-sm -mb-[41px]
      rounded-md w-0 h-[646px] md:w-[620px] -mt-32 hidden lg:block" />
-    <div>
+    <div  data-aos="zoom-in">
      <p className='text-emerald-500 text-lg font-bolg my-5'>Appointment</p>
       <h1 className="text-5xl text-white font-bold">Make an appointment Today</h1>
       <p className="py-6 text-lg text-white">

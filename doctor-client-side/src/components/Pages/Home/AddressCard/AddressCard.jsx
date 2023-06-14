@@ -31,7 +31,7 @@ return (
 <div className='ml-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
 {
 cards.map(card =>                    
-<div className={`card card-side px-4 py-2 text-white shadow-xl mx-2 my-12 ${card.background}`}   key={card.id}>
+<div  data-aos="zoom-in" className={`card card-side px-4 py-2 text-white shadow-xl mx-2 my-12 ${card.background}`}   key={card.id}>
 <figure><img src={card.image} alt="card"/></figure>
 <div className="card-body">
 <h2 className="card-title">{card.title}</h2>

@@ -22,6 +22,10 @@ import Contact from "../Pages/Contact/Contact";
 import About from "../Pages/About/About";
 import Privacy from "../Pages/Privacy/Privacy";
 import UpdateDoctor from "../Pages/MangeDoctors/UpdateDoctor/UpdateDoctor";
+import VideoCallHome from "../Pages/Pages/VideoCallHome/VideoCallHome";
+import VideoCallRoom from "../Pages/Pages/VideoCallRoom/VideoCallRoom";
+import ChatPage from "../Pages/Pages/ChatPage/ChatPage";
+import ChatLogin from "../Pages/Pages/ChatPage/ChatLogin";
 export  const routers = createBrowserRouter([
 {
     path:"/" , element:<MainLayout></MainLayout> ,
@@ -40,7 +44,14 @@ export  const routers = createBrowserRouter([
         {
             path:"/register" , element:<Register></Register>
         }
-    
+        ,
+        {
+            path:"/videoCall" , element:<VideoCallHome></VideoCallHome>
+        }
+        ,
+        {
+            path:"/videoRoom/:roomId/:name" , element:<VideoCallRoom></VideoCallRoom>
+        }
         ,
         {
             path:"/profile" , element: <PrivateRouter><Profile></Profile></PrivateRouter>
@@ -63,8 +74,16 @@ export  const routers = createBrowserRouter([
         {
             path:"/privacy" , element:<Privacy></Privacy>
         }
-   
-        , {
+        ,
+        {
+            path:"/chat" , element:<ChatLogin></ChatLogin>
+        },
+        {
+            path:"/chatRoom/:userId/:username" , element:<ChatPage></ChatPage>
+        }
+        
+        ,
+        {
             path:"*" , element:<ErrorPage></ErrorPage>
         }
 

@@ -7,7 +7,7 @@ import ApointMentModal from '../ApointMentModal/ApointMentModal';
 import bg from "../../../assets/images/bg.png" ;
 import {Helmet} from "react-helmet";
 import { useQuery } from '@tanstack/react-query';
-import {HashLoader} from "react-spinners" ;
+import PageLoader from '../../../Share/PageLoader/PageLoader';
 const ApointmentPage = () => {
 const [selectedDate, setSelectedDate] = React.useState(new Date());
 const [reciveTreatMent , setTreatMent] = useState(null) ;
@@ -30,7 +30,7 @@ fetch(`https://use-me.vercel.app/v2/appointmentOptions?date=${date}`)
 .then(res => res.json()) 
  })
 if(isLoading){
-return <HashLoader color='lime' style={{margin:"15% 50%"}}> </HashLoader>
+return <PageLoader></PageLoader>
 }
 return (
 <React.Fragment>

@@ -30,13 +30,14 @@ return setUser({}) ;
 const menueItems = <>
 <input type="checkbox" className="toggle mt-5" onClick={hanldeThemeChange}   />
 <li><Link to="/">Home</Link></li>
-
 {
 user.uid ? <> 
 <li><Link to="/dashboard"> Dashboard </Link></li>
 <li><Link to="/about">About</Link></li>
 <li><Link to="/apointment">Appointment</Link></li>
 <li><Link to="/contact">Contact Us</Link></li>
+<li><Link to="/videoCall">Video Call</Link></li>
+<li><Link to="/chat">Chat</Link></li>
 </> :
 <>
 <li><Link to="/login">Login</Link></li> 

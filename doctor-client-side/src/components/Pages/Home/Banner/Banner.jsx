@@ -8,12 +8,12 @@ backgroundImage:`url('${chairBackgroundImage}')` ,
 backgroundSize:"cover" , 
 }
 return (
-<div className='my-4'>
+<div className='my-4'  data-aos="zoom-in">
 <div className="hero" style={bannerBackground}>
 <div className="hero-content flex-col lg:flex-row-reverse">
 <img src={chair} alt='chair' className="max-w-sm rounded-lg shadow-2xl h-[355px]	
 w-[594px]" />
-<div className='px-20 '>
+<div className='px-20 '  data-aos="zoom-in">
 <h1 className="text-5xl font-bold">
    
     <Typewriter
@@ -29,7 +29,7 @@ w-[594px]" />
             delaySpeed={1000}
           />
 </h1>
-<p className="py-6 text-lg font-bold">
+<p className="py-6 text-lg font-bold"  data-aos="zoom-in">
 Your dent is our care , we are always here to serve your any dent issues we 
 will serve your and dent issue  don't affraid about of your daint cause we are
 dainties.Tooth Decay. Tooth decay is also known as dental caries or dental cavities. ...
